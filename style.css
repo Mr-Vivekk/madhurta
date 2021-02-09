@@ -2,30 +2,29 @@
 
 *{
     margin: 0;
-    padding: 0;
-    list-style: none;
+    padding:0;
     text-decoration: none;
-    box-sizing: border-box;
 }
 
-#navbar{
+.navbar{
     display: flex;
-    align-items: center;
+    background-color:#88CCF1;
+    flex-direction: row;  
+    align-items: center; 
 }
 
 /* Navigation bar:logo and img */
-#logo{
-
-    margin: 0px 5px;;
+/*#logo{
+      margin: 0px 5px;
 }
-#logo img{
+*/
+.navbar img{
     height: 60px;
     margin: 3px 5px;
-
 }
 
 /* NAvigation logo text */
-#logotext{
+/* #logotext{
     font-size: 1.1rem;
     color: black;
     display: block;
@@ -33,16 +32,21 @@
     padding: 1px 1px;
 }
 
-/* Navigation bar list styling */
-#navbar{
-    position: relative;
-}
-
-#navbar ul{
+/* Navigation bar list styling 
+.navbar > div{
+  background-color: #a81a1a;
+  margin: 10px;
+  padding: 20px;
+} */
+.navmenu{
     display: flex;
-}
+    width: 80%;
+    justify-content: flex-end;
+    align-content: center;
+    }
 
-#navbar::before{
+    
+.navbar::before{
     content: "";
     background-color: white;
     position: absolute;
@@ -52,21 +56,18 @@
     opacity: 0.7;
 }
 
-#navbar ul li{
-    list-style: none;
-    font-size: 1.1rem;
+.navbar a{
+     font-size: 1.1rem;
+     color: black;
+     text-decoration: none;
+     display: block;
+     margin: 10px 15px;
+     padding: 10px 8px;
+    
 }
 
-#navbar ul li a{
 
-    color: black;
-    text-decoration: none;
-    display: block;
-    margin: 10px 15px;
-    padding: 10px 8px;
-}
-
-#navbar ul li a:hover{
+.navbar a:hover{
 
     color: white;
     background-color: rgb(110, 108, 108);
